@@ -1,0 +1,129 @@
+.none {
+    display:none;
+}
+
+@media (max-width: 1700px) {
+    .header {
+        padding-bottom: 250px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 68px;
+    }
+    
+    .article-text {
+        margin-right: 0;
+        padding-left: 50px;
+        max-width: 50%;
+    }
+
+    .article-text::before {
+            width: 140px;
+            height: 140px;
+            font-size: 140px;
+    }
+
+    .article-img {
+        max-width: 45%;
+    }
+
+    .article-img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .footer-nav + .footer-nav {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 920px) {
+    .footer-row {
+        flex-direction: column-reverse;
+    }
+
+    .footer-nav-wrapper {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 800px) {
+        .header {
+            padding-bottom: 200px;
+        }
+
+        .nav-wrapper {
+            margin-bottom: 90px;
+        }
+
+        .nav, .login {
+            display: none;
+        }
+
+        .nav-button {
+            display: block;
+        }
+
+        .mobile-nav-active {
+            display: flex;
+        }
+
+        .hero-title {
+            text-shadow: 0px 0px 15px #0009;
+        }
+
+        .hero-category::before {
+            width: 42px;
+        }
+
+        .hero-category {
+            font-size: 14px;
+            padding-left: 62px;
+        }
+
+        .article-title {
+            font-size: 44px;
+        }
+
+       
+}
+
+
+@media (max-width: 720px) {
+    .article, 
+    .article:nth-child(2n) {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-bottom: 100px;
+    }
+
+   
+    .article-text {
+        max-width: 100%;
+    }
+
+    .article-img {
+        max-width: 320px;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 560px) {
+    .hero-title {
+        font-size: 44px;
+    }
+
+    .footer-nav-wrapper {
+        flex-direction: column;
+    }
+
+    .footer-nav + .footer-nav {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+}
+
